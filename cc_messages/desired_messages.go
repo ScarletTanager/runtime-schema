@@ -50,6 +50,7 @@ type DesireAppRequestFromCC struct {
 	LogSource                   string                        `json:"log_source,omitempty"`
 	Network                     *models.Network               `json:"network,omitempty"`
 	VolumeMounts                []*models.VolumeMount         `json:"volume_mounts"`
+	Label                       string                        `json:"label"`
 }
 
 type CCRouteInfo map[string]*json.RawMessage
